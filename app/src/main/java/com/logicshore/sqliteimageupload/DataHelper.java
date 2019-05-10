@@ -37,6 +37,7 @@ public class DataHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         String CREATE_CONTACTS_TABLE = "CREATE TABLE " + TABLE_CONTACTS + "(" + KEY_ID + " INTEGER PRIMARY KEY," + KEY_NAME + " TEXT," + KEY_PASSWORD + " TEXT," + KEY_IMAGE+"TEXT)";
         sqLiteDatabase.execSQL(CREATE_CONTACTS_TABLE);
+        // we can take AUTO INCREMENT alse for KEY_ID
     }
 
     @Override
